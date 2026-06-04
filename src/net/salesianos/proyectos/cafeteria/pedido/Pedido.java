@@ -14,4 +14,30 @@ public class Pedido {
         this.producto = producto;
         this.paraLlevar = paraLlevar;
     }
+
+    public String getCodigo(){
+        return this.codigo;
+    }
+    public String getCliente(){
+        return this.cliente;
+    }
+    public String getProducto(){
+        return this.producto;
+    }
+    public boolean getParaLlevar(){
+        return this.paraLlevar;
+    }
+
+    public void setCodigo(String codigo){
+        this.codigo = codigo;
+    }
+    public void setCliente(String cliente){
+        this.cliente = cliente;
+    }
+    public void setProducto(String producto){
+        this.producto = producto;
+    }
+    public void setParaLlevar(boolean paraLlevar){
+        this.paraLlevar = paraLlevar;
+    }
 }
