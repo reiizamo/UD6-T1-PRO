@@ -40,4 +40,18 @@ public class Pedido {
     public void setParaLlevar(boolean paraLlevar){
         this.paraLlevar = paraLlevar;
     }
+
+    @Override
+    public String toString() {
+        return this.codigo + ", " + this.cliente + ", " + this. producto + ", " + (this.paraLlevar ? "Para llevar" : "Para comer aquí");
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Pedido pedidoComparar = (Pedido) obj;
+        if (this.codigo == pedidoComparar.codigo) {
+            return true;
+        }
+        return false;
+    }
 }
