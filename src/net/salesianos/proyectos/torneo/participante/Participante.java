@@ -32,4 +32,23 @@ public class Participante {
     public void setCategoria(String categoria){
         this.categoria = categoria;
     }
+
+    @Override
+    public String toString() {
+        return this.idJugador + " " + this.nombre + " " + this.categoria;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Participante participanteComparar = (Participante) obj;
+        if (this.idJugador == participanteComparar.idJugador) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return idJugador.hashCode();
+    }
 }
