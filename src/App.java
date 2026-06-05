@@ -44,6 +44,18 @@ public class App {
         System.out.println("Último preparado");
         System.out.println(preparados.peek());
 
-        
+        System.out.println();
+        System.out.println("Extraccion de pedido");
+        System.out.println(preparados.pop());
+
+        System.out.println();
+        System.out.println("Comandas");
+        for (Pedido pedido : pedidos) {
+            System.out.println(pedido);
+        }
+
+        System.out.println();
+        System.out.println("La lista de comandas");
+        System.out.println(pedidos.isEmpty() ? "Esta vacía" : "No esta vacía");
     }
 }
