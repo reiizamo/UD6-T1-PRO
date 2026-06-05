@@ -12,5 +12,24 @@ public class Participante {
         this.nombre = nombre;
         this.categoria = categoria;
     }
-    
+
+    public String getIdJugador(){
+        return this.idJugador;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+    public String getCategoria(){
+        return this.categoria;
+    }
+
+    public void setIdJugador(String idJugador){
+        this.idJugador = idJugador;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public void setCategoria(String categoria){
+        this.categoria = categoria;
+    }
 }
