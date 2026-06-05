@@ -1,0 +1,4 @@
+Número total pelis: 6
+Duración total en minutos: 842
+Duración media: 140
+Pelicula con mayor duración: El Padrino 175
