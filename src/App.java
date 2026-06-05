@@ -1,5 +1,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
+
 import net.salesianos.proyectos.cafeteria.pedido.Pedido;
 public class App {
     public static void main(String[] args) throws Exception {
@@ -17,13 +19,30 @@ public class App {
         pedidos.add(p5);
 
         System.out.println();
+        System.out.println("Comandas");
         for (Pedido pedido : pedidos) {
             System.out.println(pedido);    
         }
 
         // El propio nombre del método te dice que hace, no tuve ni que usar IA
         System.out.println();
+        System.out.println("Primera Comanda");
         System.out.println(pedidos.peek());
+
+        System.out.println();
+        System.out.println("Pedidos preparados");
+        System.out.println(pedidos.poll());
+        System.out.println(pedidos.poll());
+        System.out.println(pedidos.poll());
+
+        Stack<Pedido> preparados = new Stack<>();
+        preparados.push(p1);
+        preparados.push(p2);
+        preparados.push(p3);
+
+        System.out.println();
+        System.out.println("Último preparado");
+        System.out.println(preparados.peek());
 
         
     }
