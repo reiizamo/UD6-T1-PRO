@@ -55,7 +55,21 @@ public class App2 {
         hashmap.put("Senior", 2);
         hashmap.put("Experto", 1);
 
-
+        int contadorJ = 0;
+        int contadorS = 0;
+        int contadorE = 0;
+        for (Participante participante : hashset) {
+            if (participante.getCategoria() == "Junior"){
+                contadorJ++;
+            }else if (participante.getCategoria() == "Senior"){
+                contadorS++;
+            }else {
+                contadorE++;
+            }
+        }
+        System.out.println();
+        System.out.println("Participante por categoría");
+        System.out.println("Juniors: " + contadorJ + ", " + "Seniors: " + contadorS + ", " + "Expertos: " + contadorE);
 
         System.out.println();
         System.out.println("Mapa Completo");
