@@ -55,10 +55,22 @@ public class App2 {
         hashmap.put("Senior", 2);
         hashmap.put("Experto", 1);
 
-        
+
 
         System.out.println();
         System.out.println("Mapa Completo");
         System.out.println(hashmap);
+
+        System.out.println();
+        System.out.println("Participantes en la categoría junior");
+        System.out.println(hashmap.get("Junior"));
+
+        System.out.println();
+        System.out.println("Existe la categoría experto?");
+        System.out.println(hashmap.containsKey("Experto"));
+
+        hashmap.remove("Experto");
+
+        
     }
 }
