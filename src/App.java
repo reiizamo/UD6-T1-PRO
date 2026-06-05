@@ -16,13 +16,15 @@ public class App {
         pedidos.add(p4);
         pedidos.add(p5);
 
+        System.out.println();
+        for (Pedido pedido : pedidos) {
+            System.out.println(pedido);    
+        }
+
+        // El propio nombre del método te dice que hace, no tuve ni que usar IA
+        System.out.println();
+        System.out.println(pedidos.peek());
+
         
-
-
-
-
-        
-
-
     }
 }
