@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 
 import net.salesianos.proyectos.torneo.participante.Participante;
@@ -27,6 +28,21 @@ public class App2 {
             System.out.println(participante);
         }
 
+        System.out.println();
+        System.out.println("Número de participantes que se intentarion añadir");
+        ArrayList<Participante> lista = new ArrayList<>();
+        lista.add(p1);
+        lista.add(p2);
+        lista.add(p3);
+        lista.add(p4);
+        lista.add(p5);
+        lista.add(p6);
+        lista.add(p7);
+
+        System.out.println(lista.size());
         
+        System.out.println();
+        System.out.println("Número de participantes que se añadieron");
+        System.out.println(hashset.size());
     }
 }
