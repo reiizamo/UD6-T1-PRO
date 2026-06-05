@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 import net.salesianos.proyectos.torneo.participante.Participante;
@@ -44,5 +45,20 @@ public class App2 {
         System.out.println();
         System.out.println("Número de participantes que se añadieron");
         System.out.println(hashset.size());
+
+        // No es una lista que no añade elementos duplicados basandose en el HashCode
+        // y como el hashCode se crea basandose en el idJugador,
+        // cualquier participante que tenga el mismo id, no se va a añadir
+
+        HashMap<String, Integer> hashmap = new HashMap<>();
+        hashmap.put("Junior", 3);
+        hashmap.put("Senior", 2);
+        hashmap.put("Experto", 1);
+
+        
+
+        System.out.println();
+        System.out.println("Mapa Completo");
+        System.out.println(hashmap);
     }
 }
