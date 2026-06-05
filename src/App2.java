@@ -71,6 +71,8 @@ public class App2 {
 
         hashmap.remove("Experto");
 
-        
+        System.out.println();
+        System.out.println("Todas las categorias");
+        System.out.println(hashmap.keySet());
     }
 }
