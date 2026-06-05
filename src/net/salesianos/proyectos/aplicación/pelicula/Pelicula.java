@@ -33,5 +33,9 @@ public class Pelicula {
         this.duracionMinutos = duracion;
     }
 
+    @Override
+    public String toString() {
+        return this.titulo + " " + this.genero + " " + this.duracionMinutos;
+    }
 
 }
