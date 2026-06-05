@@ -21,5 +21,12 @@ public class App2 {
         hashset.add(p6);
         hashset.add(p7);
 
+        System.out.println();
+        System.out.println("Participante");
+        for (Participante participante : hashset) {
+            System.out.println(participante);
+        }
+
+        
     }
 }
