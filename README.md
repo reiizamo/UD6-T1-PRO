@@ -10,6 +10,11 @@ y quería que quedara así.
 **Nota 2.**
 La parte de hacer un log.txt no lo entendi bien, entonces hice que solo almacenara `programa ejecutado`
 
+**Nota 3.**
+Para este proyecto quise hacer lo merges y crear las ramas directamente desde GitHub
+y así intentar ver si podía mirar lo del Network todo bonito, pero por culpa de eso fui
+borrando las ramas que ya había terminado de usar, por eso solo existe la main y la develop
+de todas formas en los Pull requests cerrados se puede ver que existieron otras ramas.
 
 ---
 
